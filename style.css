@@ -13,7 +13,15 @@
     font-family: "Poppins" ;
 }
 header{
- 
+
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+
+
+    
     background-color: rgb(255, 255, 255);
     height: 80px;
     display: flex;
@@ -41,7 +49,7 @@ header{
     font-size: 1.2rem;
     margin-right: 1.7rem;
     color: black;
-   
+   font-weight: 400;
 
 }
 
@@ -49,7 +57,7 @@ header{
     display: flex;
     flex-direction: column;
     background-color: var(--color);
-    height: 90vh;
+    height: 100vh;
     padding: 3rem 14rem;
     
 }
@@ -67,7 +75,7 @@ header{
 }
 .about-image img {
     border-radius: 50%;
-    height: 60%;
+    height: 50%;
     box-shadow: 4px 11px 29px -2px rgba(0,0,0,0.58);
 -webkit-box-shadow: 4px 11px 29px -2px rgba(0,0,0,0.58);
 -moz-box-shadow: 4px 11px 29px -2px rgba(0,0,0,0.58);
@@ -135,7 +143,7 @@ header{
 }
 
 .contact-container{
-    height: 80vh;
+    height: 90vh;
     background-color: var(--color);
     display: flex;
     align-items: center;
@@ -168,6 +176,7 @@ header{
 
 .contact p{
     margin-bottom: 3rem;
+    text-align: center;
 }
 .contact-box{
     
@@ -188,6 +197,9 @@ header{
 
 .contact-box a{
     margin: 0.5rem 0px ;
+    background: var(--colorGradiente);
+    -webkit-background-clip: text;
+    color: transparent;
   
 }
 .contact-box img{
@@ -253,7 +265,7 @@ textarea::placeholder{
 
 
 ::placeholder{
-    color: $color-principal;
+    
     padding-left: 10px;
 
     font-size: 16px;
@@ -268,7 +280,9 @@ textarea::placeholder{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 0;
+    
+    padding: 2rem 0;
+    background-color: rgb(253, 253, 253);
 }
 
 .proyects a{
@@ -279,6 +293,9 @@ textarea::placeholder{
 .proyects h2{
     font-size: 2.5rem;
     margin: 2rem 0;
+    background: var(--colorGradiente);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 
@@ -287,7 +304,7 @@ textarea::placeholder{
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     width: 70%;
-    height: 300px;
+    height: 400px;
     padding: 0rem 3rem;
     border-radius: 1rem;
     margin: 2rem auto;
@@ -323,6 +340,9 @@ textarea::placeholder{
 
 footer{
     height: 60px;
-
     background: linear-gradient(to right, rgb(58, 0, 103), rgb(28, 0, 166));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
 }
